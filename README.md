@@ -20,6 +20,10 @@ The endpoint always responds with a JSON object that has a results key. The valu
 ### Your solution
 Please implement your solution as an App that we can try out. For Android we need 4.4 compatibility or for iOS 8 compatibility. Also send us the source code to your solution. We use GitHub, so if you put your source code into a GitHub repository, it will make our life easy.  
 Please provide information for any third party library and tool you are using.
+Please use Objective-C as the main language for iOS test
 
+Bonus points for iOS :
+- Show us how you can adapt it to different screen sizes 
+- Can you use Objective-C and SWIFT together? show us a sample
 
-**A clean, well-animated, beautiful UI is very important. Please, let your imagination fly here.**
+**A clean, well-animated, beautiful UI is very important. Please, let your imagination fly here (hint, use more than standard animations).**
