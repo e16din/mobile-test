@@ -30,13 +30,28 @@ dependencies {
     compile "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
     compile "com.android.support:design:${SUPPORT_LIBRARY_VERSION}"
 
+    // ButterKnife:
+
+    //Field and method binding for Android views which uses
+    //annotation processing to generate boilerplate code for you.
     apt "com.jakewharton:butterknife-compiler:${BUTTERKNIFE_VERSION}"
     compile "com.jakewharton:butterknife:${BUTTERKNIFE_VERSION}"
 
+    // Retrofit:
+
+    //Type-safe HTTP client for Android and Java by Square, Inc.
     compile "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
     compile "com.squareup.retrofit2:converter-gson:${RETROFIT_VERSION}"
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
 
+    // LightUtils:
+
+    //Collection of utilities
     compile 'com.github.e16din:LightUtils:1.4.5'
+
+    // MaterialDatetimePicker:
+
+    //Material DateTime Picker tries to offer you the date and time pickers as shown in
+    //the Material Design spec, with an easy themable API.
     compile 'com.wdullaer:materialdatetimepicker:2.4.0'
 }
