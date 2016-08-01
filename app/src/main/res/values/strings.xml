@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GoEuroTest</string>
+    <string name="enter_a_start_location">Enter a start location</string>
+    <string name="enter_an_end_location">Enter an end location</string>
+    <string name="search">Search</string>
+    <string name="enter_a_date">Enter a date</string>
+    <string name="date">%1$s.%2$s.%3$s</string>
+    <string name="search_is_not_yet_implemented">Search is not yet implemented</string>
+</resources>

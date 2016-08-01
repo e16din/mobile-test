@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".screens.main.MainActivity">
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.e16din.goeurotest.view.AutoCompleteTextView
+                    android:id="@+id/vFromCityField"
+                    style="@style/field_location"
+                    android:hint="@string/enter_a_start_location"
+                    android:imeOptions="actionNext"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/vFromCityProgressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </FrameLayout>
+
+
+        <Space android:layout_width="match_parent"
+               android:layout_height="12dp"/>
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.e16din.goeurotest.view.AutoCompleteTextView
+                    android:id="@+id/vToCityField"
+                    style="@style/field_location"
+                    android:hint="@string/enter_an_end_location"
+                    android:imeOptions="actionNext"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/vToCityProgressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </FrameLayout>
+
+        <Space android:layout_width="match_parent"
+               android:layout_height="24dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText android:id="@+id/vDateField"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/enter_a_date"
+                          android:imeOptions="actionDone"
+                          android:inputType="date"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton android:id="@+id/vCalendarButton"
+                         android:layout_width="32dp"
+                         android:layout_height="32dp"
+                         android:layout_gravity="center_vertical"
+                         android:background="@null"
+                         android:contentDescription="@string/app_name"
+                         android:padding="8dp"
+                         android:src="@drawable/ic_calendar"/>
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent"
+               android:layout_height="80dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/vSearch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_search"
+            android:enabled="false"
+            android:gravity="start|center_vertical"
+            android:text="@string/search"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

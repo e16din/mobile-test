@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.e16din.goeurotest"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    final SUPPORT_LIBRARY_VERSION = '24.1.1'
+    final RETROFIT_VERSION = '2.1.0'
+    final BUTTERKNIFE_VERSION = '8.1.0'
+
+    compile "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    compile "com.android.support:design:${SUPPORT_LIBRARY_VERSION}"
+
+    apt "com.jakewharton:butterknife-compiler:${BUTTERKNIFE_VERSION}"
+    compile "com.jakewharton:butterknife:${BUTTERKNIFE_VERSION}"
+
+    compile "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
+    compile "com.squareup.retrofit2:converter-gson:${RETROFIT_VERSION}"
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    compile 'com.github.e16din:LightUtils:1.4.5'
+    compile 'com.wdullaer:materialdatetimepicker:2.4.0'
+}
